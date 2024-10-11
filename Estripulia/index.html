@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, content="width=device-width, initial-scale=1.0">
+    <title>Salão de Festas Estripulia</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Salão de Festas Estripulia</h1>
+        <p>O lugar perfeito para suas comemorações!</p>
+
+        <div class="imagens">
+            <img src="assets/img/salao.jfif" alt="Festa no Estripulia">
+            <img src="assets/img/decoração.jfif" alt="Decoração Estripulia">
+        </div>
+
+        <form id="formulario">
+            <label for="data">Data da Festa:</label>
+            <input type="date" id="data" required>
+
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" required>
+
+            <label for="mesas">Quantidade de Mesas:</label>
+            <input type="number" id="mesas" required>
+
+            <label for="pagantes">Pessoas Pagantes:</label>
+            <input type="number" id="pagantes" required>
+
+            <label for="naoPagantes">Pessoas Não Pagantes:</label>
+            <input type="number" id="naoPagantes" required>
+
+            <label for="garcons">Quantidade de Garçons:</label>
+            <input type="number" id="garcons" required>
+
+            <label for="monitores">Quantidade de Monitores:</label>
+            <input type="number" id="monitores" required>
+
+            <label for="tiposDoces">Tipos de Doces:</label>
+            <input type="text" id="tiposDoces" placeholder="Ex: Brigadeiro, Beijinho" required>
+
+            <label for="quantidadeDoces">Doces:</label>
+            <input type="number" id="quantidadeDoces" required>
+
+            <label for="hotDog">Qual Hot Dog você vai querer:</label>
+            <input type="text" id="hotDog" placeholder="Ex: Tradicional, Vegetariano" required>
+
+            <div class="checkbox-group">
+                <label for="crepe">Crepe:</label>
+                <input type="checkbox" id="crepe" value="sim"> Sim
+                <input type="checkbox" id="crepeNo" value="nao"> Não
+            </div>
+
+            <div class="checkbox-group">
+                <label for="costelinha">Costelinha com Barbecue:</label>
+                <input type="checkbox" id="costelinha" value="sim"> Sim
+                <input type="checkbox" id="costelinhaNo" value="nao"> Não
+            </div>
+
+            <div class="checkbox-group">
+                <label for="escondidinho">Escondidinho:</label>
+                <input type="checkbox" id="escondidinho" value="sim"> Sim
+                <input type="checkbox" id="escondidinhoNo" value="nao"> Não
+            </div>
+
+            <div class="checkbox-group">
+                <label for="macarrao">Macarrão:</label>
+                <input type="checkbox" id="macarrao" value="sim"> Sim
+                <input type="checkbox" id="macarraoNo" value="nao"> Não
+            </div>
+
+            <button type="submit">Reservar</button>
+        </form>
+
+        <h2 id="resultado"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
